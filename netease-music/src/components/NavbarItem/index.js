@@ -7,11 +7,12 @@ class NavbarItem extends Component {
     }
     state = {}
     render() {
-        const itemInfor=this.props;
+        const itemInfor = this.props;
+        console.log(itemInfor);
         return (
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">{itemInfor.label}</p>
+            <div class='navbar-item-wrapper'>
+                <div class='button-wrapper'>
+                    <button>{itemInfor.itemInfor.label}</button>
                 </div>
             </div>
         );

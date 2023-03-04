@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Divider, Row } from 'antd';
 import NavbarItem from './NavbarItem';
+import Filter from './Filter/index';
 
 class Navbar extends Component {
     constructor(props) {
@@ -12,17 +13,15 @@ class Navbar extends Component {
 
         return (
             <div>
-                <Row justify="space-around" align="middle">
+                <Row justify="" align="middle">
                     {
                         navbarItems.map((item) => {
                             return (
-                                <Col span={4}>
-                                    <NavbarItem itemInfor={item}></NavbarItem>
-                                </Col>
-
+                                <NavbarItem itemInfor={item}></NavbarItem>
                             )
                         })
                     }
+                    <Filter></Filter>
                 </Row>
             </div>
         );

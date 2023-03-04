@@ -11,7 +11,7 @@ const headerStyle = {
   height: 120,
   paddingInline: 50,
   lineHeight: '64px',
-  backgroundColor: '#131124',
+  backgroundColor: '#fff',
 };
 const contentStyle = {
   textAlign: 'center',
@@ -68,7 +68,9 @@ class App extends Component {
         <Header style={headerStyle}>
           <Navbar navbarItems={this.state.navbarItems}></Navbar>
         </Header>
-        <Content style={contentStyle}></Content>
+        <Content style={contentStyle}>
+          <Body></Body>
+        </Content>
         <Footer style={footerStyle}></Footer>
       </Layout>
       <Sider style={siderStyle}></Sider>
